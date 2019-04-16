@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <div th:if="${data.weather.forecast ne null}">
+        <h3 th:text="未来3天天气："></h3>
+        <div class="row" >
+            <div class="card" th:each="forcast:${data.weather.forecast}">
+                <p >日期：<span th:text="${forcast.predictDate}"></span></p>
+                <p >白天：<span th:text="${forcast.conditionDay}"></span>&nbsp;
+                    <span th:text="${forcast.tempDay}"></span>℃&nbsp;
+                    <span th:text="${forcast.windDirDay}"></span><span th:text="${forcast.windLevelDay}"></span>级
+                </p>
+                <p >夜间：<span th:text="${forcast.conditionNight}"></span>&nbsp;
+                    <span th:text="${forcast.tempNight}"></span>℃&nbsp;
+                    <span th:text="${forcast.windDirNight}"></span><span th:text="${forcast.windLevelNight}"></span>级
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div th:if="${data.weather.condition ne null}">
+        <h3 th:text="现在天气："></h3>
+        <div class="card" >
+            <p ><span th:text="${data.weather.condition.condition}"></span>&nbsp;
+                <span th:text="${data.weather.condition.temp}"></span>℃&nbsp;
+                <span th:text="${data.weather.condition.windDir}"></span><span th:text="${data.weather.condition.windLevel}"></span>级
+            </p>
+
+        </div>
+
+    </div>
+
+    <div th:if="${data.weather.aqi ne null}">
+        <h3 th:text="空气质量："></h3>
+        空气质量指数：<span th:text="${data.weather.aqi.value}"></span>
+    </div>
+
+
+
+    <script type="text/javascript" th:src="@{/js/jquery-3.2.1.slim.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+
+</html>
