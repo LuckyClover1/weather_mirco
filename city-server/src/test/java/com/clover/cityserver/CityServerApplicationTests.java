@@ -14,7 +14,8 @@ public class CityServerApplicationTests {
     private String author;
     @Test
     public void contextLoads() {
-        Assert.assertEquals("clover",author);
+        Assert.assertEquals("clover1",author);
+
     }
 
 }

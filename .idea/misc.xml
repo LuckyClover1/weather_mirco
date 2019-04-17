@@ -6,12 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/base/pom.xml" />
-        <option value="$PROJECT_DIR$/weather-collection/pom.xml" />
-        <option value="$PROJECT_DIR$/weathservice/pom.xml" />
         <option value="$PROJECT_DIR$/city-server/pom.xml" />
-        <option value="$PROJECT_DIR$/weather-report/pom.xml" />
-        <option value="$PROJECT_DIR$/weather-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-collection/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-report/pom.xml" />
+        <option value="$PROJECT_DIR$/weathservice/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-zuul/pom.xml" />
       </list>
     </option>
   </component>

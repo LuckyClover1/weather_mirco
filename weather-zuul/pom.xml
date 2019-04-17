@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.clover</groupId>
-    <artifactId>config-server</artifactId>
+    <artifactId>weather-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>config-server</name>
+    <name>weather-zuul</name>
     <description>配置中心服务</description>
 
     <properties>
